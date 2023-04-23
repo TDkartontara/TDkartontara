@@ -327,7 +327,7 @@ body._lock {
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
-  padding: 8px 16px;
+  padding: 8px 10px;
   border: 1px solid #4B2A02;
   color: #000;
 }
@@ -953,7 +953,7 @@ ol.counter li:before {
   position: relative;
   width: 300px;
   height: 300px;
-  margin: 0px 5px 10px 5px;
+  margin: 0px 10px 10px 10px;
 }
 .popup__image img {
   position: absolute;
@@ -961,7 +961,6 @@ ol.counter li:before {
   height: 100%;
   top: 0;
   left: 0;
-  object-fit: cover;
 }
 @media (max-width: 767.98px) {
   .popup__image {
@@ -1313,6 +1312,14 @@ ol.counter li:before {
 }
 .footer__icon {
   margin: 0px 13px;
+}
+.footer__icon img {
+  transition: all 0.3s ease 0s;
+}
+@media (min-width: 991.98px) {
+  .footer__icon img:hover {
+    transform: scale(1.1);
+  }
 }
 @media (max-width: 767.98px) {
   .footer__icon {
@@ -1826,6 +1833,7 @@ ol.counter li:before {
   height: 100%;
   padding: 0px 0px 30px 0px;
   cursor: pointer;
+  display: flex;
 }
 @media (min-width: 991.98px) {
   .catalog__item:hover .catalog__image {
@@ -1856,6 +1864,7 @@ ol.counter li:before {
   height: 100%;
   top: 0;
   left: 0;
+  border-radius: 10px;
 }
 @media (max-width: 767.98px) {
   .catalog__image {
